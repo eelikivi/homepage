@@ -1,0 +1,23 @@
+.Messenger {
+
+	&__Screen {
+		display: flex;
+		flex-direction: column-reverse;
+		align-items: flex-start;
+		justify-content: flex-start;
+
+		height: 500px;
+		border: 1px solid red;
+
+
+	}
+
+	&__Message {
+		background-color: $light;
+	}
+
+	&__Questions {
+
+	}
+
+}
