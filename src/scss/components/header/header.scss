@@ -1,20 +1,20 @@
 header {
 	// gradient
-	&:before {
-		display: block;
-		position: absolute;
-		top: 0;
-		left: 0;
-		right: 0;
+	// &:before {
+	// 	display: block;
+	// 	position: absolute;
+	// 	top: 0;
+	// 	left: 0;
+	// 	right: 0;
 
-		height: 100vw;
-		max-height: 100vh;
+	// 	height: 100vw;
+	// 	max-height: 100vh;
 
-		content: '';
-		background-image: linear-gradient(to bottom, transparent 0%, black 60%);
-	}
+	// 	content: '';
+	// 	background-image: linear-gradient(to bottom, transparent 0%, black 60%);
+	// }
 
 	.Header {
-		color: $white;
+		// color: $white;
 	}
 }

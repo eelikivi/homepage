@@ -15,26 +15,50 @@ export default class Messenger extends Component {
 			sending: false,
 			data: [
 				{
-					q: 'What',
-					a: 'That'
+					q: 'What1',
+					a: 'That1'
 				},
 				{
-					q: 'What',
-					a: 'That'
+					q: 'What2',
+					a: 'That2'
 				},
 				{
-					q: 'What',
-					a: 'That'
+					q: 'What3',
+					a: 'That3'
 				},
-			]
+			],
+			messages: []
 		}
 	}
 
+	askQuestion(id) {
+		console.log(this.state.data[id].q);
+		console.log(this.state.data[id].a);
+	}
+
 	render() {
+		const questions = this.state.data.map((item, index) =>
+			<Question
+				key={index}
+				question={this.state.data[index].q}
+				onClick={() => this.askQuestion(index)}
+			/>
+		)
+
 		return (
 			<section>
-				<div className="Messenger">
+				<div className="Messenger container">
+					<div className="row">
 
+						<div className="Messenger__Screen col-md-5">
+							{this.state.messages}
+						</div>
+
+						<div className="Messenger__Questions col-md-7">
+							{questions}
+						</div>
+
+					</div>
 				</div>
 			</section>
 		)

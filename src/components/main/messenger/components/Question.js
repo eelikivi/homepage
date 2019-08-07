@@ -3,9 +3,16 @@ import React, {Component} from 'react'
 export default class Main extends Component {
 	render() {
 		return (
-			<main>
+			<li>
+				<button
+					className="btn btn-primary"
+					onClick={this.props.onClick}
+				>
 
-			</main>
+					{this.props.question}
+
+				</button>
+			</li>
 		)
 	}
 }
