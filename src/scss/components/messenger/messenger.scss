@@ -6,18 +6,84 @@
 		align-items: flex-start;
 		justify-content: flex-start;
 
+		overflow: hidden;
+
 		height: 500px;
+		padding-bottom: 5rem;
+
 		border: 1px solid red;
 
 
 	}
 
 	&__Message {
-		background-color: $light;
+		display: flex;
+		align-self: flex-end;
+
+		max-width: 50%;
+		padding: 0.5rem 1rem;
+
+		border-radius: 1.5rem;
+
+		background-color: $blue;
+		color: $white;
+
+		transition: all 1s ease-out;
+
+		&.from {
+			align-self: flex-start;
+
+			background-color: $light;
+			color: $black;
+		}
 	}
 
 	&__Questions {
-
+		.btn {
+			border-radius: 2rem;
+		}
 	}
 
+	&__Dots {
+		display: flex;
+		position: absolute;
+
+		bottom: 15px;
+		left: 15px;
+
+		padding: 1rem 1rem;
+
+		border-radius: 2rem;
+		background-color: $light;
+
+
+		span {
+			display: block;
+
+			height: 10px;
+			width: 10px;
+			margin: 0 0.125rem;
+
+			border-radius: 50%;
+
+			background-color: $gray-500;
+
+			animation: dotAnimation 1.25s ease 0s infinite forwards;
+
+			&:nth-child(2) {
+				animation-delay: -0.25s;
+			}
+			&:nth-child(3) {
+				animation-delay: -0.5s;
+			}
+		}
+	}
+
+}
+
+@keyframes dotAnimation {
+	0% { transform: translateY(0%) }
+	25% { transform: translateY(-50%) }
+	50% { transform: translateY(0%) }
+	100% { transform: translateY(0%) }
 }

@@ -4,6 +4,7 @@ import React, {Component} from 'react'
 // Child components
 import Question from './components/Question'
 import Message from './components/Message'
+import Dots from './components/Dots'
 
 export default class Messenger extends Component {
 	constructor() {
@@ -49,10 +50,10 @@ export default class Messenger extends Component {
 	}
 
 	askQuestion(id) {
-		if (!this.state.writing) {
+		if (!this.state.writing && !this.state.sending) {
 			this.setState(prevState => {
 				// init array with a single message item
-				const message = [<Message key={this.state.sent} content={this.state.data[id].q} />]
+				const message = [<Message key={this.state.sent} data={{content: this.state.data[id].q, from: false}} />]
 
 				// concat message-item array with state array
 				const messages = message.concat(prevState.messages)
@@ -64,34 +65,39 @@ export default class Messenger extends Component {
 
 				return {
 					messages,
-					writing: true,
+					sending: true,
 					sent: prevState.sent + 1
 				}
 			})
 
 			// reply
-			const replyDelay = Math.random() * 1000 + 1000
 			setTimeout(() => {
-				this.setState(prevState => {
-					// init array with a single message item
-					const message = [<Message key={this.state.sent} content={this.state.data[id].a} />]
+				this.setState({writing: true})
 
-					// concat message-item array with state array
-					const messages = message.concat(prevState.messages)
+				const replyDelay = Math.random() * 1000 + 1000
+				setTimeout(() => {
+					this.setState(prevState => {
+						// init array with a single message item
+						const message = [<Message key={this.state.sent} data={{content: this.state.data[id].a, from: true}} />]
 
-					// splice if necessary
-					if (messages.length > this.state.maxMessages) {
-						messages.splice(this.state.maxMessages, this.state.maxMessages)
-					}
+						// concat message-item array with state array
+						const messages = message.concat(prevState.messages)
 
-					return {
-						messages,
-						writing: false,
-						sent: prevState.sent + 1
-					}
-				})
+						// splice if necessary
+						if (messages.length > this.state.maxMessages) {
+							messages.splice(this.state.maxMessages, this.state.maxMessages)
+						}
 
-			}, replyDelay);
+						return {
+							messages,
+							writing: false,
+							sending: false,
+							sent: prevState.sent + 1
+						}
+					})
+
+				}, replyDelay)
+			}, 500)
 		}
 	}
 
@@ -111,6 +117,7 @@ export default class Messenger extends Component {
 
 						<div className="Messenger__Screen col-md-5">
 							{this.state.messages}
+							{this.state.writing && <Dots />}
 						</div>
 
 						<div className="Messenger__Questions col-md-7">
