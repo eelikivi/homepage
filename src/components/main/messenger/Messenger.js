@@ -6,43 +6,17 @@ import Question from './components/Question'
 import Message from './components/Message'
 import Dots from './components/Dots'
 
+// Questions
+import MessengerData from './messengerdata.json'
+
 export default class Messenger extends Component {
 	constructor() {
 		super()
 
 		this.state = {
 			writing: false,
+			data: MessengerData,
 			sending: false,
-			data: [
-				{
-					q: 'How old are you?',
-					a: 'I stopped aging at 25 in 2018'
-				},
-				{
-					q: 'Where are you from?',
-					a: 'I\'m from Finland'
-				},
-				{
-					q: 'What is your favorite food?',
-					a: 'Hot wings. Or ribs. And of course pizza. And maybe burgers too.'
-				},
-				{
-					q: 'Your favorite animal?',
-					a: 'Dog'
-				},
-				{
-					q: 'Do you have any hobbies?',
-					a: 'I play guitar'
-				},
-				{
-					q: 'What would you do if you won the lottery?',
-					a: 'Pay back my student loan. And travel. A lot'
-				},
-				{
-					q: 'This is a nice website',
-					a: 'Thanks :)'
-				},
-			],
 			messages: [],
 			maxMessages: 6,
 			sent: 0
@@ -70,10 +44,11 @@ export default class Messenger extends Component {
 				}
 			})
 
-			// reply
+			// Add 500ms delay before showing that the other "person" is writing. Feels more realistic
 			setTimeout(() => {
 				this.setState({writing: true})
 
+				// add random delay minimum of 1s for answering
 				const replyDelay = Math.random() * 1000 + 1000
 				setTimeout(() => {
 					this.setState(prevState => {

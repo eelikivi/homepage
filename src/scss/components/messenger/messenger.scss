@@ -9,11 +9,13 @@
 		overflow: hidden;
 
 		height: 500px;
+		@include media-breakpoint-down(sm) {
+			height: 75vh;
+		}
+
 		padding-bottom: 5rem;
 
 		border: 1px solid red;
-
-
 	}
 
 	&__Message {

@@ -1,0 +1,30 @@
+[
+	{
+		"q": "How old are you?",
+		"a": "I stopped aging at 25 in 2018"
+	},
+	{
+		"q": "Where are you from?",
+		"a": "I'm from Finland"
+	},
+	{
+		"q": "What is your favorite food?",
+		"a": "Hot wings. Or ribs. And of course pizza. And maybe burgers too."
+	},
+	{
+		"q": "Your favorite animal?",
+		"a": "Dog"
+	},
+	{
+		"q": "Do you have any hobbies?",
+		"a": "I play guitar"
+	},
+	{
+		"q": "What would you do if you won the lottery?",
+		"a": "Pay back my student loan. And travel. A lot"
+	},
+	{
+		"q": "This is a nice website",
+		"a": "Thanks :)"
+	}
+]
