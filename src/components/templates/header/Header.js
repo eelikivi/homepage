@@ -2,6 +2,8 @@ import React, {Component} from 'react'
 
 export default class Header extends Component {
 	render() {
+		const urlBase = '/test-nodeftp'
+
 		return (
 			<header>
 				<div className="Header container">
@@ -9,8 +11,8 @@ export default class Header extends Component {
 						<div>Header</div>
 						<nav>
 							<ul className="list-unstyled d-flex">
-								<li className="mr-3"><a href="/">Home</a></li>
-								<li><a href="/messenger">Messenger</a></li>
+								<li className="mr-3"><a href={`${urlBase}/`}>Home</a></li>
+								<li><a href={`${urlBase}/messenger/`}>Messenger</a></li>
 							</ul>
 						</nav>
 					</div>

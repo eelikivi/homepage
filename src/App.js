@@ -21,14 +21,16 @@ import './scss/main.scss'
 
 export default class App extends Component {
 	render() {
+		const urlBase = '/test-nodeftp'
+
 		return (
 			<>
 				<Header />
 
 				<Router>
 					<Switch>
-						<Route exact path="/" component={Main} />
-						<Route path="/messenger/" component={Messenger} />
+						<Route exact path={`${urlBase}/`} component={Main} />
+						<Route path={`${urlBase}/messenger/`} component={Messenger} />
 						<Route component={NotFound} />
 					</Switch>
 				</Router>
