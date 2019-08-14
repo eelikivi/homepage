@@ -1,5 +1,7 @@
 import React, {Component} from 'react'
 
+import IntroParticles from './intro-particles/IntroParticles'
+
 export default class Header extends Component {
 	render() {
 
@@ -15,6 +17,7 @@ export default class Header extends Component {
 							</ul>
 						</nav>
 					</div>
+					<IntroParticles />
 				</div>
 			</header>
 		)

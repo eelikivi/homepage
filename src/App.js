@@ -9,7 +9,7 @@ import Footer from './components/templates/footer/Footer'
 
 
 // ////////////////////////////////////////////////////////////////////////////////////////////////
-// Components
+// Components, "Pages"
 import Main from './components/main/Main'
 import Messenger from './components/messenger/Messenger'
 import NotFound from './NotFound'
@@ -19,8 +19,9 @@ import NotFound from './NotFound'
 // Styles
 import './scss/main.scss'
 
-// require('dotenv').config()
 
+// ////////////////////////////////////////////////////////////////////////////////////////////////
+// Main app, handles routing
 export default class App extends Component {
 	render() {
 
