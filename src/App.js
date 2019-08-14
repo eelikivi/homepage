@@ -1,6 +1,7 @@
 import React, {Component} from 'react'
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom"
 
+
 // ////////////////////////////////////////////////////////////////////////////////////////////////
 // Templates
 import Header from './components/templates/header/Header'
@@ -18,10 +19,10 @@ import NotFound from './NotFound'
 // Styles
 import './scss/main.scss'
 
+// require('dotenv').config()
 
 export default class App extends Component {
 	render() {
-		const urlBase = '/test-nodeftp'
 
 		return (
 			<>
@@ -29,8 +30,8 @@ export default class App extends Component {
 
 				<Router>
 					<Switch>
-						<Route exact path={`${urlBase}/`} component={Main} />
-						<Route path={`${urlBase}/messenger/`} component={Messenger} />
+						<Route exact path={`${process.env.REACT_APP_BASE}/`} component={Main} />
+						<Route path={`${process.env.REACT_APP_BASE}/messenger/`} component={Messenger} />
 						<Route component={NotFound} />
 					</Switch>
 				</Router>
