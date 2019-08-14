@@ -15,7 +15,9 @@ header {
 	// }
 
 	.Header {
-		// color: $white;
+		&__Brand {
+			color: $white;
+		}
 
 
 		&__Particles {
