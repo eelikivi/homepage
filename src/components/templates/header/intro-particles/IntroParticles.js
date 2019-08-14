@@ -1,7 +1,8 @@
 import React, {Component} from 'react'
 import Particles from 'react-particles-js'
 
-import particleParams from './particles.json'
+//import particleParams from './particles.json'
+import particleParams from './nasa.json'
 
 export default class IntroParticles extends Component {
 	render() {
