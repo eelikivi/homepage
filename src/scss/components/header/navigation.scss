@@ -1,0 +1,12 @@
+.Navigation {
+
+	&__Item {
+		margin-left: 1rem;
+
+		&>a {
+			color: $white;
+			font-weight: 700;
+		}
+	}
+
+}
