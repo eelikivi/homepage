@@ -67,7 +67,7 @@ export default class Main extends Component {
 								<p>I did this project as my bachelor's thesis and I am very proud of it.</p>
 								<p>The project was built with PHP and MySQL on the back end and I used jQuery for the quiz.</p>
 								<p className="mt-5">
-									<a className="btn btn-primary" href="https://kivikarre.fi/soluvisa">Visit Soluvisa</a>
+									<a className="btn btn-primary" href="https://kivikaarre.fi/soluvisa">Visit Soluvisa</a>
 									<br />
 									<small>(In Finnish)</small>
 								</p>

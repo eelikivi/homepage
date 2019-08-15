@@ -2,7 +2,7 @@
 My homepage that I use to showcase my other projects and other information
 
 ## Live site
-https://kivikaarre.fi (when ready)
+http://eeli.kivikaarre.fi (when ready)
 
 Meanwhile, testing here: https://kivikaarre.fi/test-nodeftp
 
