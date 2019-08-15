@@ -207,7 +207,7 @@
 // $border-width:                1px !default;
 // $border-color:                $gray-300 !default;
 
-// $border-radius:               .25rem !default;
+$border-radius:               3rem !default;
 // $border-radius-lg:            .3rem !default;
 // $border-radius-sm:            .2rem !default;
 
@@ -245,7 +245,7 @@
 // Font, line-height, and color for body text, headings, and more.
 
 // // stylelint-disable value-keyword-case
-$font-family-sans-serif:      'Bebas Neue Regular', sans-serif;
+$font-family-sans-serif:      'Lato', sans-serif;
 // $font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
 // $font-family-base:            $font-family-sans-serif !default;
 // // stylelint-enable value-keyword-case
@@ -271,7 +271,7 @@ $font-size-base:              1.5rem !default; // Assumes the browser default, t
 // $h6-font-size:                $font-size-base !default;
 
 // $headings-margin-bottom:      $spacer / 2 !default;
-// $headings-font-family:        null !default;
+$headings-font-family:        'Bebas Neue Regular', 'Lato' !default;
 // $headings-font-weight:        500 !default;
 // $headings-line-height:        1.2 !default;
 // $headings-color:              null !default;
@@ -290,7 +290,7 @@ $font-size-base:              1.5rem !default; // Assumes the browser default, t
 // $lead-font-size:              $font-size-base * 1.25 !default;
 // $lead-font-weight:            300 !default;
 
-// $small-font-size:             80% !default;
+$small-font-size:             1rem !default;
 
 // $text-muted:                  $gray-600 !default;
 

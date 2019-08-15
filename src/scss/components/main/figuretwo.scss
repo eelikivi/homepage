@@ -1,0 +1,38 @@
+.FigureTwo {
+	position: relative;
+	padding-bottom: 100%;
+
+	img {
+		position: absolute;
+		width: 75%;
+		height: auto;
+
+		transition-duration: 2s;
+		transition-timing-function: ease;
+
+		&:nth-child(1) {
+			left: 0;
+			top: 0;
+			transition-property: left, top;
+		}
+		&:nth-child(2) {
+			right: 0;
+			bottom: 0;
+			transition-property: right, bottom;
+		}
+
+	}
+
+	&:hover img {
+		&:nth-child(1) {
+			left: 1rem;
+			top: 1rem;
+			transition-property: left, top;
+		}
+		&:nth-child(2) {
+			right: -1rem;
+			bottom: 1rem;
+			transition-property: right, bottom;
+		}
+	}
+}

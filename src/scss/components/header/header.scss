@@ -16,7 +16,22 @@ header {
 
 	.Header {
 		&__Brand {
+			margin-top: 0.25rem;
 			color: $white;
+			img {
+				height: 50px;
+				width: auto;
+				border: 2px solid $white;
+				border-radius: 50%;
+				padding: 0.5rem;
+				background-color: transparent;
+				transition: background-color 0.15s, border 0.15s;
+
+				&:hover  {
+					background: rgba($white, 0.5);
+					border: 2px solid rgba($white, 0.5);
+				}
+			}
 		}
 
 

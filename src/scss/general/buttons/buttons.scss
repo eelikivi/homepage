@@ -1,0 +1,20 @@
+.btn {
+	padding-left: 2rem;
+	padding-right: 2rem;
+	font-family: 'Bebas Neue Regular', 'Lato';
+	line-height: 40px;
+	background-size: 200% auto;
+	background-position: center right; /* change the direction of the change here */
+	//background-size:cover;
+	&:hover {
+		background-position: top left; /* change the direction of the change here */
+	}
+
+	transition: background-position 0.25s ease;
+}
+
+.btn-primary {
+	border-color: transparent;
+	background-color: transparent;
+	background-image: linear-gradient(to left, #ba0044 0%, #790085 51%, #3900c5 100%) !important;
+}

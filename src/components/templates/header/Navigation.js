@@ -1,5 +1,4 @@
 import React, {Component} from 'react'
-
 import NavigationItem from './navigation/NavigationItem'
 
 export default class Navigation extends Component {
