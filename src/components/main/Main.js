@@ -2,6 +2,8 @@ import React, {Component} from 'react'
 
 // Content components
 import Section from './Section'
+
+import Hero from './content/Hero'
 import TextWithImage from './content/TextWithImage'
 
 export default class Main extends Component {
@@ -9,9 +11,9 @@ export default class Main extends Component {
 	render() {
 		return (
 			<main>
-				{/*<Section />*/}
+				<Hero />
 
-				<div className="container">
+				{/*<div className="container">
 					<TextWithImage
 						options={{
 							imgPos: 'left'
@@ -39,7 +41,17 @@ export default class Main extends Component {
 							alt: 'kitten'
 						}}
 					/>
-				</div>
+					</div>*/}
+
+					<Section
+						dir="left"
+					/>
+
+					<div className="my-5 py-5"></div>
+
+					{/*<Section
+						dir="right"
+					/>*/}
 
 			</main>
 		)

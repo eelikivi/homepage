@@ -24,21 +24,18 @@ import './scss/main.scss'
 // Main app, handles routing
 export default class App extends Component {
 	render() {
-
 		return (
-			<>
+			<Router>
 				<Header />
 
-				<Router>
-					<Switch>
-						<Route exact path={`${process.env.REACT_APP_BASE}/`} component={Main} />
-						<Route path={`${process.env.REACT_APP_BASE}/messenger/`} component={Messenger} />
-						<Route component={NotFound} />
-					</Switch>
-				</Router>
+				<Switch>
+					<Route exact path={`${process.env.REACT_APP_BASE}/`} component={Main} />
+					{/*<Route path={`${process.env.REACT_APP_BASE}/messenger/`} component={Messenger} />*/}
+					<Route component={NotFound} />
+				</Switch>
 
 				<Footer />
-			</ >
+			</Router>
 		)
 	}
 }

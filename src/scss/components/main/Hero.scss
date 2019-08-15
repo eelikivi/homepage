@@ -1,0 +1,50 @@
+.Hero {
+	height: 80vh;
+
+
+	&__Title {
+		text-align: center;
+		&>span {
+			padding: 1rem;
+			color: $white;
+			font-size: 80px;
+			background: -webkit-linear-gradient(red, blue);
+			background-clip: text;
+			-webkit-text-fill-color: transparent;
+
+			&:first-letter {
+				font-size: 100px;
+			}
+		}
+
+	}
+
+	&__Subtitle {
+		position: relative;
+		overflow: hidden;
+		width: 100%;
+		margin-top: 1rem;
+
+		font-size: 32px;
+		text-align: center;
+
+		color: $white;
+
+		&:before, &:after {
+			height: 2px;
+			width: calc(100% - 1rem);
+			position: absolute;
+			top: calc(50% - 1px);
+
+			content: '';
+			background-color: $white;
+		}
+
+		&:before {
+			right: 70%;
+		}
+		&:after {
+			left: 70%;
+		}
+	}
+}

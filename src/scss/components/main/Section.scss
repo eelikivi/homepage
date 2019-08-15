@@ -1,0 +1,33 @@
+.Section {
+	position: relative;
+	padding-top: 50px;
+	padding-bottom: 50px;
+
+
+	&:before, &:after {
+		display: block;
+		position: absolute;
+		z-index: -1;
+		left: 0;
+
+		width: 100%;
+		height: 100px;
+		top: -50px;
+
+		transform: skewY(3deg);
+
+		background-color: $white;
+
+		content: '';
+	}
+	&:after {
+		top: unset;
+		bottom: -50px;
+	}
+
+	&.right {
+		&:before, &:after {
+			transform: skewY(-3deg);
+		}
+	}
+}
