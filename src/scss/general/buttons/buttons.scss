@@ -3,14 +3,15 @@
 	padding-right: 2rem;
 	font-family: 'Bebas Neue Regular', 'Lato';
 	line-height: 40px;
-	background-size: 200% auto;
+	background-size: 150% auto;
 	background-position: center right; /* change the direction of the change here */
 	//background-size:cover;
 	&:hover {
 		background-position: top left; /* change the direction of the change here */
+		border-color: transparent;
 	}
 
-	transition: background-position 0.25s ease;
+	transition: background-position 0.75s ease;
 }
 
 .btn-primary {

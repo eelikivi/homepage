@@ -54,7 +54,7 @@ export default class Main extends Component {
 						}
 					/>
 
-					<div className="my-5 py-5 container">
+					<div className="mt-8 py-8 container">
 						<h4 className="mt-5 font-bebasneue text-white text-center">Are you looking for "Soluvisa"?</h4>
 						<div className="row mt-5">
 							<div className="col-md-5">

@@ -30,8 +30,8 @@
 			transition-property: left, top;
 		}
 		&:nth-child(2) {
-			right: -1rem;
-			bottom: 1rem;
+			right: 1rem;
+			bottom: -1rem;
 			transition-property: right, bottom;
 		}
 	}
