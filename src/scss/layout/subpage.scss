@@ -1,12 +1,13 @@
 .Subpage {
 	margin-top: 200px;
+	margin-bottom: 200px;
 	padding-top: 100px;
 
 	background-color: $white;
 	position: relative;
 
 
-	&:before {
+	&:before, &:after {
 		display: block;
 		position: absolute;
 		z-index: -1;
@@ -19,6 +20,11 @@
 
 		content: '';
 		background-color: $white;
+	}
+
+	&:after {
+		bottom: unset;
+		top: calc(100% - 150px);
 	}
 
 	&__Header {

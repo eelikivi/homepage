@@ -3,7 +3,13 @@
 	z-index: 0;
 	width: 100%;
 
-	margin-top: 100px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+
+	&:not(:first) {
+		margin-top: 100px;
+	}
+
 
 	background-color: $light;
 
@@ -19,6 +25,6 @@
 		transform: skewY(3deg);
 
 		content: '';
-		background-color: $light;
+		background-color: inherit;
 	}
 }
