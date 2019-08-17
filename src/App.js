@@ -11,6 +11,7 @@ import Footer from './components/templates/footer/Footer'
 // ////////////////////////////////////////////////////////////////////////////////////////////////
 // Components
 import Main from './components/main/Main'
+import Portfolio from './components/portfolio/Portfolio'
 import Contact from './components/contact/Contact'
 // import Messenger from './components/messenger/Messenger'
 import NotFound from './NotFound'
@@ -35,8 +36,8 @@ export default class App extends Component {
 
 				<Switch>
 					<Route exact path={`${process.env.REACT_APP_BASE}/`} component={Main} />
+					<Route exact path={`${process.env.REACT_APP_BASE}/portfolio/`} component={Portfolio} />
 					<Route exact path={`${process.env.REACT_APP_BASE}/contact/`} component={Contact} />
-					{/*<Route path={`${process.env.REACT_APP_BASE}/messenger/`} component={Messenger} />*/}
 					<Route component={NotFound} />
 				</Switch>
 
