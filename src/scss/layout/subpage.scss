@@ -1,0 +1,31 @@
+.Subpage {
+	margin-top: 200px;
+	padding-top: 100px;
+
+	background-color: $white;
+	position: relative;
+
+
+	&:before {
+		display: block;
+		position: absolute;
+		z-index: -1;
+		bottom: calc(100% - 150px);
+		left: -25vw;
+		width: 150vw;
+		height: 200px;
+
+		transform: skewY(-3deg);
+
+		content: '';
+		background-color: $white;
+	}
+
+	&__Header {
+		position: absolute;
+		bottom: calc(100% + 50px);
+		width: 100%;
+
+		color: $white;
+	}
+}

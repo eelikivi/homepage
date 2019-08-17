@@ -1,0 +1,24 @@
+.Subpage-section {
+	position: relative;
+	z-index: 0;
+	width: 100%;
+
+	margin-top: 100px;
+
+	background-color: $light;
+
+	&:before {
+		display: block;
+		position: absolute;
+		z-index: -1;
+		bottom: calc(100% - 150px);
+		left: -25vw;
+		width: 150vw;
+		height: 200px;
+
+		transform: skewY(3deg);
+
+		content: '';
+		background-color: $light;
+	}
+}
