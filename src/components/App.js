@@ -4,26 +4,26 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom"
 
 // ////////////////////////////////////////////////////////////////////////////////////////////////
 // Templates
-import Header from './components/header/Header'
-import Footer from './components/footer/Footer'
+import Header from './header/Header'
+import Footer from './footer/Footer'
 
 
 // ////////////////////////////////////////////////////////////////////////////////////////////////
 // Components
-import Main from './components/main/Main'
-import Portfolio from './components/subpage/portfolio/Portfolio'
-import Contact from './components/subpage/contact/Contact'
+import Main from './main/Main'
+import Portfolio from './subpage/portfolio/Portfolio'
+import Contact from './subpage/contact/Contact'
 // import Messenger from './components/messenger/Messenger'
 import NotFound from './NotFound'
 
 
 // ////////////////////////////////////////////////////////////////////////////////////////////////
 // Font awesome
-import './components/vendor/FontAwesome'
+import './vendor/FontAwesome'
 
 // ////////////////////////////////////////////////////////////////////////////////////////////////
 // Styles
-import './scss/main.scss'
+import '../scss/main.scss'
 
 
 // ////////////////////////////////////////////////////////////////////////////////////////////////
