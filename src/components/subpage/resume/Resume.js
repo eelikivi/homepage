@@ -108,14 +108,15 @@ export default class Resume extends Component {
 								<ul className="Resume__Skills list-unstyled d-flex flex-wrap justify-content-center align-items-center w-50">
 									<SkillsItem size={2} text="HTML5" />
 									<SkillsItem size={7} text="JavaScript" />
-									<SkillsItem size={2} text="CSS" />
-									<SkillsItem size={4} text="SASS" />
-									<SkillsItem size={1} text="Git" />
-									<SkillsItem size={1} text="InVision" />
-									<SkillsItem size={1} text="Photoshop" />
-									<SkillsItem size={6} text="React" />
 									<SkillsItem size={3} text="PHP" />
-									<SkillsItem size={5} text="SQL" />
+									<SkillsItem size={4} text="SASS" />
+									<SkillsItem size={2} text="Git" />
+									<SkillsItem size={6} text="React" />
+									<SkillsItem size={1} text="InVision" />
+									<SkillsItem size={2} text="CSS" />
+									<SkillsItem size={1} text="Photoshop" />
+									<SkillsItem size={3} text="SQL" />
+									<SkillsItem size={2} text="Web design" />
 								</ul>
 								</div>
 							</div>
