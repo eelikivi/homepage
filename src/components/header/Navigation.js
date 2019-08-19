@@ -8,7 +8,7 @@ export default class Navigation extends Component {
 					<NavigationItem title="Home" href="" />
 					<NavigationItem title="Resume" href="resume/" />
 					<NavigationItem title="Portfolio" href="portfolio/" />
-					<NavigationItem title="Contact" href="Contact/" />
+					<NavigationItem title="Contact" href="contact/" />
 				</ul>
 		)
 	}
