@@ -17,6 +17,12 @@
 @import './general/buttons/buttons.scss';
 @import './general/colors/colors.scss';
 
+/* TODO: restructure to make more sense */
+
+// ////////////////////////////////////////////////////////////////////////////////////////////////
+// Layout styles
+@import './layout/subpage.scss';
+@import './layout/subpage-section.scss';
 
 // ////////////////////////////////////////////////////////////////////////////////////////////////
 // Components
@@ -31,5 +37,7 @@
 @import './components/main/Hero.scss';
 @import './components/main/Section.scss';
 @import './components/main/figuretwo.scss';
+
+@import './components/portfolio/portfolio.scss';
 
 @import './components/contact/contact.scss';
