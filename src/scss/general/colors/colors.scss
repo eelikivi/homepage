@@ -1,0 +1,6 @@
+@debug unquote("color");
+@each $name, $color in $colors {
+	.bg-#{unquote($name)} {
+		background-color: $color;
+	}
+}
