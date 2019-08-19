@@ -9,6 +9,7 @@ import Footer from './footer/Footer'
 // ////////////////////////////////////////////////////////////////////////////////////////////////
 // Components
 import Main from './main/Main'
+import Resume from './subpage/resume/Resume'
 import Portfolio from './subpage/portfolio/Portfolio'
 import Contact from './subpage/contact/Contact'
 // import Messenger from './components/messenger/Messenger'
@@ -32,6 +33,11 @@ export default class App extends Component {
 
 				<Switch>
 					<Route exact path={`${process.env.REACT_APP_BASE}/`} component={Main} />
+					<Route
+						exact
+						path={`${process.env.REACT_APP_BASE}/resume/`}
+						component={Resume}
+					/>
 					<Route
 						exact
 						path={`${process.env.REACT_APP_BASE}/portfolio/`}
