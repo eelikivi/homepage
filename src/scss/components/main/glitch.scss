@@ -1,0 +1,58 @@
+.glitch {
+	position: relative;
+
+	&:before, &:after {
+		// padding: 30px;		display: inline-flex;
+		display: block;
+		content: "Eeli Kivikaarre";
+		font-size: 80px;
+		position: absolute;
+		color: white;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		overflow: hidden;
+	}
+
+	&:before {
+		left: 3px;
+		text-shadow: -2px 0 red;
+
+		animation-name: glitch-animation-1;
+		animation-duration: 7s;
+		animation-timing-function: linear;
+		animation-delay: 0s;
+		animation-iteration-count: infinite;
+		animation-direction: reverse-alternate;
+	}
+
+	&:after {
+		left: -3px;
+		text-shadow: -2px 0 blue;
+
+		animation-name: glitch-animation-2;
+		animation-duration: 7s;
+		animation-timing-function: linear;
+		animation-delay: 0s;
+		animation-iteration-count: infinite;
+		animation-direction: reverse-alternate;
+	}
+}
+
+@keyframes glitch-animation-1 {
+	$steps: 50;
+	@for $i from 0 through $steps {
+		#{percentage($i * (1/$steps))} {
+			clip: rect(random(150)+px, 1000px, random(150)+px, 30px);
+		}
+	}
+}
+
+@keyframes glitch-animation-2 {
+	$steps: 50;
+	@for $i from 0 through $steps {
+		#{percentage($i * (1/$steps))} {
+			clip: rect(random(150)+px, 1000px, random(150)+px, 30px);
+		}
+	}
+}
