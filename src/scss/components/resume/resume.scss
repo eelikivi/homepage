@@ -1,8 +1,16 @@
 .Resume {
 	&__Skills {
+		max-width: 650px;
 		&__Item {
 			span {
+				display: block;
 				line-height: 1;
+				transform: none;
+				transition: transform 0.35s ease;
+			}
+			&:hover > span {
+				transform: scale(0.8);
+				cursor: default;
 			}
 
 			&.highlight > span {
