@@ -16,7 +16,7 @@ export default class Contact extends Component {
 				</div>
 				<div className='Contact container pb-8'>
 					<div className='row'>
-						<div className='col-md-6'>
+						<div className='col-md-6 pb-8'>
 							<p>
 								I am physically located in the cold land up in the Northern
 								Europe called Finland.

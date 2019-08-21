@@ -1,26 +1,27 @@
-import React, { Component } from 'react'
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import React, { Component } from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 // ////////////////////////////////////////////////////////////////////////////////////////////////
 // Templates
-import Header from './header/Header'
-import Footer from './footer/Footer'
+import Header from './header/Header';
+import Footer from './footer/Footer';
 
 // ////////////////////////////////////////////////////////////////////////////////////////////////
 // Components
-import Main from './main/Main'
-import Portfolio from './subpage/portfolio/Portfolio'
-import Contact from './subpage/contact/Contact'
+import Main from './main/Main';
+import Resume from './subpage/resume/Resume';
+import Portfolio from './subpage/portfolio/Portfolio';
+import Contact from './subpage/contact/Contact';
 // import Messenger from './components/messenger/Messenger'
-import NotFound from './NotFound'
+import NotFound from './NotFound';
 
 // ////////////////////////////////////////////////////////////////////////////////////////////////
 // Font awesome
-import './vendor/FontAwesome'
+import './vendor/FontAwesome';
 
 // ////////////////////////////////////////////////////////////////////////////////////////////////
 // Styles
-import '../scss/main.scss'
+import '../scss/main.scss';
 
 // ////////////////////////////////////////////////////////////////////////////////////////////////
 // Main app, handles routing
@@ -32,6 +33,11 @@ export default class App extends Component {
 
 				<Switch>
 					<Route exact path={`${process.env.REACT_APP_BASE}/`} component={Main} />
+					<Route
+						exact
+						path={`${process.env.REACT_APP_BASE}/resume/`}
+						component={Resume}
+					/>
 					<Route
 						exact
 						path={`${process.env.REACT_APP_BASE}/portfolio/`}
@@ -47,6 +53,6 @@ export default class App extends Component {
 
 				<Footer />
 			</Router>
-		)
+		);
 	}
 }

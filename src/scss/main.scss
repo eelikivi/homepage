@@ -11,8 +11,8 @@
 
 // ////////////////////////////////////////////////////////////////////////////////////////////////
 // General styling
-@import './general/fonts/font-face.scss';
 @import './general/body/body.scss';
+@import './general/fonts/font-face.scss';
 @import './general/fonts/fonts.scss';
 @import './general/buttons/buttons.scss';
 @import './general/colors/colors.scss';
@@ -37,6 +37,8 @@
 @import './components/main/Hero.scss';
 @import './components/main/Section.scss';
 @import './components/main/figuretwo.scss';
+
+@import './components/resume/resume.scss';
 
 @import './components/portfolio/portfolio.scss';
 
