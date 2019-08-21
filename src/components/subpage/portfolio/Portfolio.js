@@ -63,7 +63,7 @@ export default class Portfolio extends Component {
 						</div>
 					</div>
 				</div>
-				<div className='Subpage-section bg-white'>
+				<div className='Subpage-section bg-purple'>
 					<div className='Portfolio container'>
 						<div className='row'>
 							<div className='Portfolio__Item col-md-8'>
