@@ -6,6 +6,9 @@ export default function setSubpageAfterBg() {
 	if (sections.length > 0) {
 		const bgCol = window.getComputedStyle(sections[sections.length - 1], ':before')
 			.backgroundColor
+
+		console.log(bgCol)
+
 		if (styleTag === null) {
 			const style = document.createElement('style')
 			style.setAttribute('id', 'SubpageSectionAfter')

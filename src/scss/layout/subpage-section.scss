@@ -4,7 +4,7 @@
 	width: 100%;
 
 	padding-top: 50px;
-	padding-bottom: 50px;
+	padding-bottom: 150px;
 
 	&:not(:first) {
 		margin-top: 100px;
@@ -28,7 +28,10 @@
 		background-color: inherit;
 	}
 
-	&.left:before {
-		transform: skewY(-3deg);
+	&.left {
+		padding-top: 100px;
+		&:before {
+			transform: skewY(-3deg);
+		}
 	}
 }

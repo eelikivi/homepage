@@ -17,7 +17,7 @@ export default class Portfolio extends Component {
 				<div className='pb-8'>
 					<div className='container'>
 						<div className='row'>
-							<div className='col-md-12'>
+							<div className='col-md-12 pb-8'>
 								<p>
 									This is where you'll find some more information about
 									the work I have completed.
