@@ -20,14 +20,18 @@ export default class Resume extends Component {
 				</div>
 				<div className="Resume container">
 					<div className="row">
-						<div className="col-md-7">
+						<div className="col-md-7 pb-8">
 							<h2 className="">Eeli Kivikaarre</h2>
-							<h5 className="">Web developer</h5>
+							<h5 className="mb-4">Web developer</h5>
 							<p>
-								I want to improve my skills and get as much experience
-								experience as possible.
+								I am an enthusiastic coding nerd who loves a challenge. My
+								favorite color is <strong className="text-tardis">Tardis blue</strong> and I drink my coffee black.
 							</p>
 							<p>
+								My dream is to improve my skills and gather as much experience
+								as possible.
+							</p>
+							<p className="mt-4">
 								<ResumeBtn
 									text="LinkedIn"
 									href="https://kivikaarre.fi/linkedin"

@@ -18,7 +18,7 @@ export default class Messenger extends Component {
 			data: MessengerData,
 			sending: false,
 			messages: [],
-			maxMessages: 6,
+			maxMessages: 15,
 			sent: 0
 		}
 	}
@@ -98,13 +98,13 @@ export default class Messenger extends Component {
 			<section>
 				<div className="Messenger container">
 					<div className="row">
-						<div className="Messenger__Screen col-md-5">
+						<div className="Messenger__Screen col-md-8 col-lg-5 mb-3 mb-lg-0">
 							{this.state.messages}
 							{this.state.writing && <Dots />}
 						</div>
 
-						<div className="Messenger__Questions col-md-7">
-							<ul className="list-unstyled">{questions}</ul>
+						<div className="Messenger__Questions col-md-4 col-lg-7 align-self-end">
+							<ul className="list-unstyled d-flex flex-wrap justify-content-center justify-content-md-start">{questions}</ul>
 						</div>
 					</div>
 				</div>

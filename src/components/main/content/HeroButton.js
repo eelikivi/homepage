@@ -9,6 +9,7 @@ export default class HeroButton extends Component {
 					target="_blank"
 					rel="noreferrer noopener"
 					className="link-white"
+					aria-label={this.props.alt}
 				>
 					<i className={this.props.faIcon} />
 				</a>
