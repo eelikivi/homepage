@@ -4,9 +4,18 @@ import React, { Component } from 'react'
 import Section from './Section'
 
 import Hero from './content/Hero'
-import TextWithImage from './content/TextWithImage'
+// import TextWithImage from './content/TextWithImage'
+
+// Functional components
+import Messenger from '../messenger/Messenger'
+
+import setHomepageFooterBg from '../../helpers/homepage-helpers'
 
 export default class Main extends Component {
+	componentDidMount() {
+		setHomepageFooterBg();
+	}
+
 	render() {
 		return (
 			<main>
@@ -17,8 +26,8 @@ export default class Main extends Component {
 						<>
 							<h2>Hi!</h2>
 							<p>
-								I am a web-developer and this is my website. Glad you
-								found here! I'll keep information about my projects here and
+								I am a web-developer and this is my website. Glad you found
+								here! I'll keep information about my projects here and
 								showcase some of the work I've been involved in. Feel free
 								to look around!
 							</p>
@@ -29,8 +38,9 @@ export default class Main extends Component {
 
 				<div className="mt-8 py-8 container">
 					<h4 className="mt-5 font-bebasneue text-white text-center">
-						Are you looking for "Soluvisa"?
+						Are you looking for Soluvisa?
 					</h4>
+					<h6 className="text-white text-center">(Blood Cell Quiz)</h6>
 					<div className="row mt-5">
 						<div className="col-md-5">
 							<figure className="FigureTwo">
@@ -61,9 +71,20 @@ export default class Main extends Component {
 					</div>
 				</div>
 
-				{/*<section className="Homepage-section left">
-
-				</section>*/}
+				<div className="Frontpage-section left">
+					<div className="container">
+						<h3>More info</h3>
+						<p>
+							Here, let the JavaScript version of me answer your questions! I chose
+							the most relevant questions to make your life easy, you're welcome.
+						</p>
+						<div className="row">
+							<div className="col-12 mt-5">
+								<Messenger />
+							</div>
+						</div>
+					</div>
+				</div>
 			</main>
 		)
 	}

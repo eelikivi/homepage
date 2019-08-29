@@ -6,7 +6,7 @@ export default class Footer extends Component {
 			<footer>
 				<div className="Footer container">
 					<div className="text-white text-center">
-						<p className="small">Eeli Kivikaarre 2019</p>
+						<p className="small mb-0">Eeli Kivikaarre 2019</p>
 					</div>
 				</div>
 			</footer>

@@ -15,10 +15,12 @@ export default class Hero extends Component {
 						<HeroButton
 							href="https://github.com/eelikivi"
 							faIcon="fab fa-github"
-						/>
+							alt="Github"
+							/>
 						<HeroButton
 							href="https://kivikaarre.fi/linkedin"
 							faIcon="fab fa-linkedin-in"
+							alt="LinkedIn"
 						/>
 					</ul>
 				</div>

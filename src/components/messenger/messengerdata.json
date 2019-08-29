@@ -13,7 +13,7 @@
 	},
 	{
 		"q": "Your favorite animal?",
-		"a": "Dog"
+		"a": "Dog. Although rhinos are so cool"
 	},
 	{
 		"q": "Do you have any hobbies?",
@@ -26,5 +26,29 @@
 	{
 		"q": "This is a nice website",
 		"a": "Thanks :)"
+	},
+	{
+		"q": "Your favorite game?",
+		"a": "Probably Half-Life 2"
+	},
+	{
+		"q": "What makes you angry",
+		"a": "Being hungry. I am a very calm person when I eat regularly"
+	},
+	{
+		"q": "Can you cook?",
+		"a": "I think so, yeah. My pasta is always al dente"
+	},
+	{
+		"q": "lol",
+		"a": "wtf"
+	},
+	{
+		"q": "Do you own a car?",
+		"a": "I drive a Fiat Punto who identifies as Ferrari"
+	},
+	{
+		"q": "Why did you use React to make a static website",
+		"a": "That's actually a really good question. The answer really comes down to a single fact that is because I can."
 	}
 ]
