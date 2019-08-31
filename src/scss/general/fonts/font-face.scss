@@ -10,7 +10,8 @@
 	font-family: 'Bebas Neue Regular';
 	src: url('/fonts/BebasNeue-Regular.otf');
 }
+$font-bebasneue: 'Bebas Neue Regular', sans-serif;
 .font-bebasneue {
-	font-family: 'Bebas Neue Regular', sans-serif;
+	font-family: $font-bebasneue;
 }
 
