@@ -5,7 +5,7 @@ export default class NavigationItem extends Component {
 	render() {
 		return(
 			<li className="Navigation__Item">
-				<Link to={`${process.env.REACT_APP_BASE}/${this.props.href}`}>{this.props.title}</Link>
+				<Link onClick={this.props.onClick} to={`${process.env.REACT_APP_BASE}/${this.props.href}`}>{this.props.title}</Link>
 			</li>
 		)
 	}
